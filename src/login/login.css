@@ -1,0 +1,82 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #FFD700;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-custom {
+    background-color: #ca8a00;
+    padding: 20px 0;
+}
+
+header img {
+    width: 80px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-top: 10px;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #000; 
+    border: none;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #ffeb7a; 
+    color: #000
+}
+
+i {
+    font-size: 45px;
+    padding-right: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    display: inline-flex; /* Torna o link um container flexível */
+    align-items: center; /* Alinha o texto e o ícone verticalmente */
+    gap: 5px; /* Espaçamento entre o texto e o ícone */
+    text-decoration: none; /* Remove sublinhado (opcional) */
+    color: inherit; /* Mantém a cor do link */
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #474747;
+}
+
+a span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.alert {
+    display: none;
+}

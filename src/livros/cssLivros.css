@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header img {
+    width: 80px;
+}
+
+.cabecalho {
+    background-color: #FFD700;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+}
+
+.logo {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-top: 10px;
+}
+
+header {
+    background-color: #FFD700;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+}
+
+header img {
+    width: 80px;
+}
+
+.logo {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-top: 10px;
+}
+
+.header-custom {
+    background-color: #ca8a00;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-custom {
+    background-color: #f8d200;
+}
+
+.card {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-text{
+    margin: 10px;
+}
+
+.card-subtitle{
+    margin: 10px;
+}
+
+.button-pesquisar-custom {
+    background-color: #0a9e2d;
+}
+
+.button-pesquisar-custom:hover {
+    background-color: #07be32;
+}
+
+.btn-warning {
+    background-color: #ffd34d;
+}
+
+.btn-warning:hover {
+    background-color: rgb(255, 230, 0);
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.button-confirmar-custom {
+    background-color: #0a9e2d !important;
+    border: 1px solid black !important;
+}
+
+.button-confirmar-custom:hover {
+    background-color: #07be32 !important;
+}
+
+.button-cancelar-custom {
+    background-color: #ff0b0b !important;
+    border: 1px solid #000000 !important;
+}
+
+.button-cancelar-custom:hover {
+    background-color: #bd0101 !important;
+}
+
+
+.alert {
+    margin: 15px;
+    position: relative;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-cancelado {
+    background-color: #edd4d4;
+    color: #ff0b0b;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

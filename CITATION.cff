@@ -1,0 +1,31 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: LarDosLivros
+authors: 
+  - family-names: Teixeira Silva
+    given-names: Luiz Felipe
+  - family-names: Monteiro de Souza
+    given-names: Guilherme
+  - family-names: Selvatici Figueiredo
+    given-names: Pedro
+  - family-names: Assunção Resende
+    given-names: Matheus
+  - family-names: Eustáquio Vieira
+    given-names: Harlei
+
+  - name-suffix: Professor Maciel, W. D.
+    affiliation: PUC Minas
+    family-names: Dias Maciel
+    given-names: Wesley
+
+    keywords: 
+    - Livro
+    - Educação
+    - Usabilidade
+    - Experiëncia do Usuario
+    - Web
+    - JSON-Server
+repository-code: 
+license: CC-BY-4.0
+version: 1.0.0
+date-released:

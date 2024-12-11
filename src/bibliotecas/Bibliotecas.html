@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LARDOSLIVROS - Bibliotecas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Bibliotecas.css">
+</head>
+
+<body>
+  <!-- Barra de Navegação -->
+  <header class="d-flex flex justify-content-between align-items-center">
+    <div class="d-flex">
+      <a href="../homeAdm/homepageAdm.html">
+        <h1 class="logo">LarDosLivros</h1>
+      </a>
+      <img src="../imagens/logo.png" alt="">
+    </div>
+    <a href="./CadastroDeBiblioteca.html" class="btn btn-secondary">Cadastrar bibliotecas</a>
+  </header>
+
+  <!-- Cabeçalho da Página -->
+  <div class="header-custom text-white text-center py-3">
+    <h1>Bibliotecas Parceiras</h1>
+    <p>Confira nossas bibliotecas cadastradas!</p>
+  </div>
+
+  <!-- Barra de Pesquisa -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-12">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar biblioteca..." aria-label="Pesquisar"
+            id="searchInput">
+          <button class="btn btn-warning" type="button" onclick="searchLibrary()">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista de Bibliotecas -->
+  <main class="container mt-4" id="librariesList">
+    <div class="row">
+      <!-- Biblioteca 1 -->
+      <div class="col-md-12 mb-4">
+        <div class="card shadow-sm" data-name="Biblioteca Padre Alberto Antoniazzi">
+          <div class="card-body">
+            <h5 class="card-title">Biblioteca Padre Alberto Antoniazzi</h5>
+            <p class="card-text"><strong>Endereço:</strong>
+              <a href="https://www.google.com/maps?q=R.+Dom+José+Gaspar,+500+-+Prédio+26+-+Coração+Eucarístico,+Belo+Horizonte+-+MG,+30535-901"
+                target="_blank">R. Dom José Gaspar, 500 - Prédio 26 - Coração Eucarístico, Belo Horizonte - MG,
+                30535-901</a>
+            </p>
+            <p class="card-text"><strong>Telefone:</strong> (31) 3319-4242</p>
+            <p class="card-text"><strong>Horário de Funcionamento:</strong></p>
+            <ul>
+              <li>Domingo: Fechado</li>
+              <li>Segunda a Sexta: 07:30–21:50</li>
+              <li>Sábado: 08:00–12:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Biblioteca 2 -->
+      <div class="col-md-12 mb-4">
+        <div class="card shadow-sm" data-name="Biblioteca PUC Minas Barreiro">
+          <div class="card-body">
+            <h5 class="card-title">Biblioteca PUC Minas Barreiro</h5>
+            <p class="card-text"><strong>Endereço:</strong>
+              <a href="https://www.google.com/maps?q=Av.+Afonso+Vaz+de+Melo,+1200+-+Barreiro,+Belo+Horizonte+-+MG,+30640-070"
+                target="_blank">Av. Afonso Vaz de Melo, 1200 - Barreiro, Belo Horizonte - MG, 30640-070</a>
+            </p>
+            <p class="card-text"><strong>Telefone:</strong> (31) 3328-9514</p>
+            <p class="card-text"><strong>Horário de Funcionamento:</strong></p>
+            <ul>
+              <li>Domingo: Fechado</li>
+              <li>Segunda a Sexta: 07:30–21:50</li>
+              <li>Sábado: 08:00–12:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Biblioteca 3 -->
+      <div class="col-md-12 mb-4">
+        <div class="card shadow-sm" data-name="Biblioteca Pública Estadual de Minas Gerais">
+          <div class="card-body">
+            <h5 class="card-title">Biblioteca Pública Estadual de Minas Gerais</h5>
+            <p class="card-text"><strong>Endereço:</strong>
+              <a href="https://www.google.com/maps?q=Praça+da+Liberdade,+21+-+Savassi,+Belo+Horizonte+-+MG,+30140-010"
+                target="_blank">Praça da Liberdade, 21 - Savassi, Belo Horizonte - MG, 30140-010</a>
+            </p>
+            <p class="card-text"><strong>Telefone:</strong> (31) 2128-8230</p>
+            <p class="card-text"><strong>Horário de Funcionamento:</strong></p>
+            <ul>
+              <li>Domingo: Fechado</li>
+              <li>Segunda a Sexta: 08:00–18:00</li>
+              <li>Sábado: Fechado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para pesquisa -->
+  <script>
+    function searchLibrary() {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const libraries = document.querySelectorAll('.card');
+
+      libraries.forEach(function (library) {
+        const libraryName = library.getAttribute('data-name').toLowerCase();
+
+        if (libraryName.includes(searchInput)) {
+          library.style.display = 'block';  // Exibe a biblioteca se o nome coincidir com a pesquisa
+        } else {
+          library.style.display = 'none';   // Oculta a biblioteca caso contrário
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

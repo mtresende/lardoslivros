@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1 class="logo">LarDosLivros</h1>
+            <img src="../imagens/logo.png" alt="Logo Lar dos Livros">
+        </div>
+    </header>
+    <div class="header-custom text-white text-center py-3">
+        <h1>Bem-Vindo!</h1>
+    </div>
+    <div class="container-xl mt-5">
+        <div class="row">
+            <div class="col-md-9">
+                <h2 class="mb-4">Navegue no Sistema</h2>
+                <a href="../requisições/MinhasRequisicoes.html">
+                    <button class="btn btn-lg mb-3 d-block">
+                        Requisições
+                    </button>
+                </a>
+                <a href="../livros/Livros.html">
+                    <button class="btn btn-lg d-block" onclick="location.href='pesquisa.html'">
+                    Pesquisa
+                </button>
+                </a>
+                
+            </div>
+            <aside class="col-md-3">
+                <h3>Anúncios</h3>
+                <div class="ad p-3 mb-3">
+                    <h5>Conheça o Kinddle!</h5>
+                </div>
+                <div class="ad p-3">
+                    <img src="../imagens/kinddle.jpg" alt="">
+                </div>
+                <div class="ad p-3 mb-3">
+                    <h5>Novas coleções!</h5>
+                </div>
+                <div class="ad p-3">
+                    <img src="../imagens/julio verne.jpg" alt="">
+                </div>
+                <div class="ad p-3 mb-3">
+                    <h5>Suporte para livros em promoção!</h5>
+                </div>
+                <div class="ad p-3">
+                    <img src="../imagens/suporte.jpg" alt="">
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+Instalar o JSONServer no Replit:
+npm install json-server
+
+Rodar o JSONServer no Replit:
+json-server --watch db/db.json --port 3333
+-->

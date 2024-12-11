@@ -1,0 +1,45 @@
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #FFD700;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+}
+
+
+header img {
+    width: 80px;
+}
+
+.header-custom {
+    background-color: #ca8a00;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #000; 
+    border: none; 
+}
+.btn:hover {
+    background-color: #ffeb7a; 
+    color: #000
+}
+
+.alert {
+    display: none;
+}

@@ -1,0 +1,72 @@
+.header-custom {
+  background-color: #ca8a00;
+}
+
+.nav-custom {
+  background-color: #f8d200;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#alert-container .alert {
+  animation: fadeInOut 4s ease-in-out;
+}
+
+.btn-secondary {
+  border: 2px solid #000;
+  color: #000;
+  background-color: #a0a0a0;
+}
+
+.btn-warning {
+  background-color: #FFD700; /* Cor de fundo do botão */
+  border-color: #000000; /* Cor da borda do botão */
+  width: 100%;
+}
+
+.btn-warning:hover {
+  background-color: rgb(255, 243, 132); /* Cor do botão ao passar o mouse */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  background-color: #FFD700;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+}
+
+header img {
+  width: 80px;
+}
+
+.logo {
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: #000;
+  padding-top: 10px;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}

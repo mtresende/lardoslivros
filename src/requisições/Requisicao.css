@@ -1,0 +1,96 @@
+/* Para o layout da página */
+body {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar os filhos em coluna */
+    min-height: 100vh; /* Garante que a altura mínima do body seja a altura da tela */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #FFD700;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+}
+
+header img {
+    width: 80px;
+}
+
+.logo {
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding-top: 10px;
+}
+
+.header-custom {
+    background-color: #ca8a00; /* Cor de fundo do cabeçalho */
+}
+
+/* Estilo da barra de navegação */
+.nav-custom {
+    background-color: #f8d200; /* Cor de fundo da barra de navegação */
+}
+
+.text-custom {
+    margin: 20px;
+}
+
+/* Estilo do botão de aviso */
+.btn-warning {
+    background-color: #FFD700; /* Cor de fundo do botão */
+    border-color: #000000; /* Cor da borda do botão */
+}
+
+/* Efeito hover do botão de aviso */
+.btn-warning:hover {
+    background-color: rgb(255, 243, 132); /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    margin-top: auto;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+.container-xxl {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.botoesComentario button {
+    width: 45px;
+}
+
+.areaComentario textarea {
+    border-radius: 10px;
+}
+
+.areaComentario {
+    display: none;
+}
+
+.comentario {
+    display: none;
+}
+
+.alert {
+    display: none;
+}
+
+.toast-header {
+    display: flex;
+    justify-content: space-between;
+}
