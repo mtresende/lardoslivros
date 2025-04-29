@@ -45,11 +45,3 @@ imagens utilizadas para a elaboração do documento.
 Este diretório armazena o código fonte do projeto e adota uma hierarquia
 básica de projetos Web simples, que utilizam as tecnologias HTML, CSS e
 JavaScript.
-
-### Links Úteis:
-
-Aprenda Markdown e use-o para documentar o projeto  
-
-> [Sintaxe básica de gravação e formatação no GitHub](https://guides.github.com/features/mastering-markdown/)
-
-> [Suporte Github](https://help.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
